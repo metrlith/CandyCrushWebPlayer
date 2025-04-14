@@ -94,8 +94,8 @@
             #sugarDropButton:active { background-image: url('enable_sugardrops_pressed.png'); }
             #editorButton { background-image: url('editor.png'); }
             #editorButton:active { background-image: url('editor_pressed.png'); }
-            #basiliskButton { background-image: url('get_basilisk.png'); }
-            #basiliskButton:active { background-image: url('get_basilisk_pressed.png'); }
+            #flashButton { background-image: url('get_flash.png'); }
+            #flashButton:active { background-image: url('get_flash_pressed.png'); }
             #discordButton { background-image: url('discord.png'); }
             #discordButton:active { background-image: url('discord_pressed.png'); }
             #uploadButton { background-image: url('sitebackground.png'); }
@@ -216,7 +216,7 @@
                 'bg16.jpg', 'bg17.jpg', 'bg18.jpg', 'bg19.jpg', 'bg20.jpg',
                 'restart.png', 'restart_pressed.png', 'shuffle.png', 'shuffle_pressed.png',
                 'enable_sugardrops.png', 'enable_sugardrops_pressed.png', 'editor.png', 'editor_pressed.png',
-                'get_basilisk.png', 'get_basilisk_pressed.png', 'discord.png', 'discord_pressed.png',
+                'get_flash.png', 'get_flash_pressed.png', 'discord.png', 'discord_pressed.png',
                 'sitebackground.png', 'sitebackground_pressed.png', 'symbol_background.png',
                 'symbol_foreground.png', 'symbol_dock.png', 'symbol_close.png', 'symbol_close_pressed.png',
                 'press.mp3', 'dock.png', 'ccgame_levelLoader.swf'
@@ -396,14 +396,14 @@
 
             
 
-            function redirectToBasilisk() {
+            function redirectToFlash() {
                 playSound();
-                window.location.href = "https://drive.google.com/file/d/103KpMdMcqXbQgTFHCotAba4896h4NAKd/view?usp=sharing";
+                window.location.href = "https://drive.google.com/drive/folders/17Lak8T5QbOa9KDT1qW6n3RSEVG3P5F_O?usp=sharing";
             }
 
             function redirectToDiscord() {
                 playSound();
-                window.location.href = "https://discord.gg/YXZDezFfTf";
+                window.location.href = "https://discord.gg/2Zq9tszNBn";
             }
 
             function openPopup() {
@@ -442,7 +442,7 @@
 
                 document.getElementById("sugarDropButton").addEventListener("click", enableSugarDrops);
                 document.getElementById("editorButton").addEventListener("click", redirectToEditor);
-                document.getElementById("basiliskButton").addEventListener("click", redirectToBasilisk);
+                document.getElementById("flashButton").addEventListener("click", redirectToFlash);
                 document.getElementById("discordButton").addEventListener("click", redirectToDiscord);
             });
         </script>
@@ -478,11 +478,11 @@
             <button id="editorButton">
                 <span class="tooltip">Editor</span>
             </button>
-            <button id="basiliskButton">
+            <button id="flashButton">
                 <span class="tooltip">Get a Flash Enabled browser</span>
             </button>
             <button id="discordButton">
-                <span class="tooltip">CCSFE Discord Server</span>
+                <span class="tooltip">CCLE Discord Server</span>
             </button>
             <input type="file" id="fileInput" accept="image/png, image/jpeg, image/gif, image/bmp, image/webp, video/mp4, video/webm, video/ogg" style="display: none;">
             <button id="uploadButton">
