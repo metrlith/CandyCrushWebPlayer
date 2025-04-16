@@ -1,105 +1,61 @@
 # Candy Crush Web Player
 
-Welcome to the **Candy Crush Web Player** project! This repository contains the code for a web-based version of the popular Candy Crush game. It works seamlessly with the **Candy Crush Level Editor** to create and play custom levels. This project is designed to be a fun and interactive way to play Candy Crush directly in your web browser, featuring colorful candies, challenging levels, and a user-friendly interface.
-
----
+Welcome to the **Candy Crush Web Player**! This player works with the [Candy Crush Level Editor](https://github.com/tp-duolingo/CandyCrushLevelEditor) to allow you to play your custom Candy Crush levels directly in your browser. It is a simple web application built using HTML, CSS, and JavaScript, designed to be easy to use and customize.
 
 ## Features
 
-- 🎮 **Interactive Gameplay**: Enjoy colorful candies and challenging levels.
-- 📱 **Responsive Design**: Optimized for both desktop and mobile devices.
-- 🏆 **Score Tracking**: Keep track of your progress and high scores.
-- 🔧 **Extensible Codebase**: Easily add new features or customize the game.
+- **Play Custom Levels**: Load and play custom Candy Crush levels created using the Candy Crush Level Editor.
+- **Seamless Integration**: Easily import level data from the editor.
+- **User-Friendly Interface**: Simple and intuitive design for a smooth gaming experience.
 
----
+## Requirements
 
-## Installation
+To play the game, you will need a Flash-enabled browser. We recommend using **WaterFox Classic**, but any browser that supports Flash will work.
 
-Follow these steps to set up the project locally:
+## Setup Instructions
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/your-username/CandyCrushWebPlayer.git
-    ```
-2. **Navigate to the Project Directory**:
-    ```bash
-    cd CandyCrushWebPlayer
-    ```
-3. **Install Dependencies** (if applicable):
-    ```bash
-    npm install
-    ```
-4. **Run the Application**:
-    ```bash
-    npm start
-    ```
+Follow these steps to set up your environment:
 
----
+1. **Download WaterFox and Flash**  
+   Visit [this MediaFire mirror](https://www.mediafire.com/folder/y4nh28s0yuy0o/WaterFox_%26_Flash_Installers) to download the WaterFox and Flash installers.
+
+2. **Install WaterFox**  
+   - Run the WaterFox installer.  
+   - During installation, choose **not to import anything** if you don't plan on using it as your main browser.
+
+3. **Install Flash**  
+   - Run the Flash installer.  
+   - Disable automatic updates to prevent Flash from self-destructing.
+
+4. **Enable Flash in WaterFox**  
+   - Open WaterFox and type `about:config` in the address bar.  
+   - Search for `plugin.state.flash` and set its value to `2` to enable Flash.  
+   - (Optional) Set `plugin.state.flash` to `1` to disable Flash later.
 
 ## Usage
 
-To deploy and use the **Candy Crush Web Player**, follow these steps:
+Once your environment is set up, follow these steps to create and play custom levels:
 
-1. **Fork Both Repositories**:
-   - [Candy Crush Level Editor](https://github.com/tp-duolingo/CandyCrushLevelEditor)
-   - [Candy Crush Web Player](https://github.com/tp-duolingo/CandyCrushWebPlayer)
+1. **Create a Level**  
+   - Go to the [Candy Crush Level Editor](https://github.com/tp-duolingo/CandyCrushLevelEditor).  
+   - Customize your level by setting the board size, number of moves, candy types, obstacles, and special candies.
 
-2. **Deploy the Web Player**:
-   - Go to your repository on GitHub.
-   - Navigate to the **Settings** tab.
-   - Scroll down to the **Pages** section.
-   - Under **Source**, select the branch you want to deploy (e.g., `main`) and click **Save**.
-   - GitHub will generate a URL for your deployed page. Use this URL to access the application in your browser.
+2. **Export Level Data**  
+   - Use the **Export Level** option to save your level data as a JSON string.  
+   - Save the JSON string locally for future use, as levels are not saved in the editor.
 
-3. **Deploy the Level Editor**:
-   - Go to your repository on GitHub for the **Candy Crush Level Editor**.
-   - Navigate to the **Settings** tab.
-   - Scroll down to the **Pages** section.
-   - Under **Source**, select the branch you want to deploy (e.g., `main`) and click **Save**.
-   - GitHub will generate a URL for your deployed page. Use this URL to access the level editor in your browser.
+3. **Import Level Data**  
+   - Use the **Import Level** option to load a previously saved JSON string into the editor.  
+   - This allows you to edit or replay your custom level.
 
----
+4. **Play Your Level**  
+   - Use the **Play Level** option to open the Candy Crush Web Player in a new tab and load your level data.  
+   - Alternatively, use **Play Level (Vanilla)** to play the level without any customizations.
 
-## Technologies Used
+## Notes
 
-This project is built using the following technologies:
+- Ensure Flash is enabled in your browser before attempting to play.  
+- For security reasons, avoid enabling Flash on untrusted websites.  
+- The Candy Crush Web Player does not save levels; always export your level data if you want to reuse it.
 
-- HTML5
-- CSS3
-- JavaScript
-
----
-
-## Contributing
-
-Contributions are welcome! To contribute, follow these steps:
-
-1. **Fork the Repository**.
-2. **Create a New Branch**:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. **Make Your Changes** and **Commit**:
-    ```bash
-    git commit -m "Add feature-name"
-    ```
-4. **Push to Your Branch**:
-    ```bash
-    git push origin feature-name
-    ```
-5. **Open a Pull Request**: Provide a clear description of your changes.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute this project as per the license terms.
-
----
-
-## Contact
-
-For questions, feedback, or suggestions, feel free to reach out:
-
-- 📧 Join our [Discord Server](https://discord.gg/2Zq9tszNBn) to connect with the community, ask questions, share feedback, and participate in discussions about the project.
-- 🌐 GitHub: [tp-duolingo](https://github.com/tp-duolingo)
+Enjoy creating and playing your custom Candy Crush levels!
