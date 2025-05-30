@@ -2,7 +2,7 @@
 
 ![Candy Crush Web Player Banner](<assets/Candy Crush Web Player Banner.png>)
 
-Welcome to the **Candy Crush Web Player**! This player works with the [Candy Crush Level Editor](https://github.com/tp-duolingo/CandyCrushLevelEditor) to allow you to play your custom Candy Crush levels directly in your browser. It is a simple web application built using HTML, CSS, and JavaScript, designed to be easy to use and customize.
+Welcome to the **Candy Crush Web Player**! This player works with the [Candy Crush Level Editor](https://github.com/metrlith/CandyCrushLevelEditor) to allow you to play your custom Candy Crush levels directly in your browser. It is a simple web application built using HTML, CSS, and JavaScript, designed to be easy to use and customize.
 
 ## Features
 
@@ -39,7 +39,7 @@ Follow these steps to set up your environment:
 Once your environment is set up, follow these steps to create and play custom levels:
 
 1. **Create a Level**  
-   - Go to the [Candy Crush Level Editor](https://github.com/tp-duolingo/CandyCrushLevelEditor).  
+   - Go to the [Candy Crush Level Editor](https://github.com/metrlith/CandyCrushLevelEditor).  
    - Customize your level by setting the board size, number of moves, candy types, obstacles, and special candies.
 
 2. **Export Level Data**  
@@ -65,5 +65,5 @@ Enjoy creating and playing your custom Candy Crush levels!
 
 For any questions or feedback, please reach out to the developer:
 
-- **GitHub**: [tp-duolingo](https://github.com/tp-duolingo)
+- **GitHub**: [metrlith](https://github.com/metrlith)
 - **Discord Server**: [Candy Crush Level Editor](https://discord.gg/2Zq9tszNBn)
