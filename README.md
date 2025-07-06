@@ -1,6 +1,6 @@
 # Candy Crush Web Player
 
-![Candy Crush Web Player Banner](<assets/Candy Crush Web Player Banner.png>)
+![Candy Crush Web Player Banner](<assets/CandyCrushWebPlayer_Banner.png>)
 
 Welcome to the **Candy Crush Web Player**! This player works with the [Candy Crush Level Editor](https://github.com/metrlith/CandyCrushLevelEditor) to allow you to play your custom Candy Crush levels directly in your browser. It is a simple web application built using HTML, CSS, and JavaScript, designed to be easy to use and customize.
 
