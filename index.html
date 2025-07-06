@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -550,5 +550,64 @@
                 display: block;
             }
         </style>
+        <!-- 🛠️ Debug Panel HTML -->
+<div id="debugPanel" style="display: none; position: fixed; bottom: 10px; right: 10px; background: #222; color: white; padding: 10px; border-radius: 10px; z-index: 999;">
+  <strong>🛠 Debug Panel</strong><br>
+  <button onclick="resetBoard()">🔁 Reset Board</button>
+  <button onclick="winInstantly()">🏁 Win</button>
+  <button onclick="fillBoardWithColor(1)">🎨 Fill w/ Color 1</button>
+</div>
+
+<button onclick="toggleDebugPanel()" style="position: fixed; bottom: 10px; left: 10px; z-index: 999;">👀 Dev Tools</button>
+
+<script>
+function toggleDebugPanel() {
+  const panel = document.getElementById("debugPanel");
+  panel.style.display = (panel.style.display === "none") ? "block" : "none";
+}
+
+function waitForFlashMethod(methodName, callback) {
+  const flash = document.getElementById("flash");
+  if (flash && typeof flash[methodName] === "function") {
+    callback();
+  } else {
+    setTimeout(() => waitForFlashMethod(methodName, callback), 100);
+  }
+}
+
+function resetBoard() {
+  waitForFlashMethod("resetBoard", () => {
+    document.getElementById("flash").resetBoard();
+    console.log("[🛠 Debug] Board reset.");
+  });
+}
+
+function winInstantly() {
+  waitForFlashMethod("forceWin", () => {
+    document.getElementById("flash").forceWin();
+    console.log("[🛠 Debug] Forced win triggered.");
+  });
+}
+
+function fillBoardWithColor(color) {
+  waitForFlashMethod("fillBoardWithColor", () => {
+    document.getElementById("flash").fillBoardWithColor(color);
+    console.log(`[🛠 Debug] Filled board with color ${color}.`);
+  });
+}
+
+document.addEventListener("keydown", e => {
+  if (e.ctrlKey && e.key === 'D') toggleDebugPanel();
+});
+
+// Automatically show debug panel if URL contains ?debug=true
+if (window.location.search.includes('debug=true')) {
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("debugPanel").style.display = 'block';
+  });
+}
+</script>
+
+<button onclick="toggleDebugPanel()" style="position: fixed; bottom: 10px; left: 10px; z-index: 999;">👀 Dev Tools</button>
     </body>
     </html>
