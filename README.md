@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+>
+> Hi, thanks for your interest! This repository has been merged with the [Candy Crush Forever!](https://github.com/metrlith/CandyCrushForever) repository.
+
 # Candy Crush Web Player
 
 ![Candy Crush Web Player Banner](<assets/CandyCrushWebPlayer_Banner.png>)
